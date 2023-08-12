@@ -47,4 +47,4 @@ Hitung = st.button('Hitung Nilai TBI')
 if Hitung :
     nilai_akhir = (nilai_konversi_listening  + nilai_konversi_structure  + nilai_konversi_reading )/3 * 10
     
-    st.write ('Nilai TBI Anda Adalah=', nilai_akhir)
+    st.markdown(f'<p style="font-size: 24px;">Nilai TBI Anda Adalah= {round(nilai_akhir, 2)}</p>', unsafe_allow_html=True)
